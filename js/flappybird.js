@@ -89,7 +89,7 @@ gameover_audio.src = "audio/gameover.mp3";
 
 var gap=90;//расстояние между верхним и нижним барьером
 
-
+ 
 // птица подлетает
 function moveUP(){
     yPos -=25;
@@ -131,17 +131,16 @@ function restart () {
 
 // отрисовка игры
 function draw() {
-
     //При нажатии на пробел птичка подлетает 
     document.addEventListener ("click", moveUP, false);
     document.addEventListener ("touchstart", moveUP, false);
     document.onkeydown = function(e) {
         // вверх
         if(e.key === ' ') {
-             moveUP();
+            moveUP();
         }
-    }  
-    
+    } 
+
     size();
   
     ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
