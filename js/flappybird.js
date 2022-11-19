@@ -249,7 +249,9 @@ function gameOVER () {
     document.getElementById('canvas').style.display = "none";
     document.getElementById('game_over').style.display = "block";
     document.getElementById('restart').style.display = "block";
-    document.getElementById('nameWinner').style.display = "block";
+    if (score >= 1) {
+        document.getElementById('nameWinner').style.display = "block";
+    }
 }
 
 const ajaxHandlerScript="https://fe.it-academy.by/AjaxStringStorage2.php";
