@@ -157,3 +157,24 @@ canvas {
     transform: scale(1.4) translate(-50%, -50%) ;
     cursor: pointer;
 }
+
+@media only all and (max-height: 500px ) {
+  #refreshRecords {
+    font-size: 24px;
+  }  
+  #start {
+    font-size: 24px;
+  }  
+} 
+  
+@media only all and (max-height: 350px ) {
+    #start {
+        top: 40%;
+    }  
+    #refreshRecords {
+        top: 70%;
+    }  
+    #fonbird3 {
+        left: 25%;    
+    }
+}  

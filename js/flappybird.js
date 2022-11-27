@@ -158,11 +158,11 @@ function draw() {
     for (var i=0; i<pipe.length; i++) {
         
         ctx.drawImage(pipeUp, pipe[i].x, pipe[i].y, canvas.width/13, pipeUp.height);
-        if (canvas.height <= 720) {
-            ctx.drawImage(pipeBottom, pipe[i].x, pipe[i].y+pipeUp.height + gap, canvas.width/13, pipeBottom.height);
-        } else {
+      //  if (canvas.height <= 720) {
+       //     ctx.drawImage(pipeBottom, pipe[i].x, pipe[i].y+pipeUp.height + gap, canvas.width/13, pipeBottom.height);
+     //   } else {
             ctx.drawImage(pipeBottom, pipe[i].x, pipe[i].y+pipeUp.height + gap, canvas.width/13, canvas.height - gap - canvas.height/4);
-        }
+     //   }
         pipe[i].x--; 
 
       if (canvas.width > 600){ 
